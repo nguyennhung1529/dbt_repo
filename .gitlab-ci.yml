@@ -1,4 +1,4 @@
-# image: fishtownanalytics/dbt:latest
+# image: xemuliam/dbt:latest
 
 stages:
   - test
@@ -8,7 +8,13 @@ before_script:
   - apt-get update && apt-get install -y python3-venv python3-pip # for Linux runners
   - python3 -m venv env_dbt_demo
   - source env_dbt_demo/bin/activate
-  - pip deps
+  
+  - pip install dbt
+  - pip install dbt-core
+  - pip install dbt-trino
+
+  - cd ./dbt_trino_demo
+  - dbt deps
   # - pip install -r requirements.txt # assuming you have a requirements.txt with DBT and other dependencies
 
 test_dbt_models:
