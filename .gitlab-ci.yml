@@ -5,11 +5,18 @@ stages:
   - deploy
 
 before_script:
+  - apt-get update && apt-get install -y python3-venv python3-pip # for Linux runners
+  - python3 -m venv env_dbt_demo
+  - source env_dbt_demo/bin/activate
+  - pip deps
+  # - pip install -r requirements.txt # assuming you have a requirements.txt with DBT and other dependencies
 
 test_dbt_models:
   stage: test
   script:
-    - echo "test ..."
+    - dbt debug # Debug DBT models
+    - dbt run # Run DBT models
+    - dbt test # Run DBT tests
   only:
     - main # or any other branch you want to run tests on
 
@@ -20,33 +27,3 @@ deploy_to_ec2:
     # deployment script
   only:
     - main
-
-
-# # image: fishtownanalytics/dbt:latest
-
-# stages:
-#   - test
-#   - deploy
-
-# before_script:
-#   - apt-get update && apt-get install -y python3-venv python3-pip # for Linux runners
-#   - python3 -m venv env_dbt_demo
-#   - source env_dbt_demo/bin/activate
-#   - pip install -r requirements.txt # assuming you have a requirements.txt with DBT and other dependencies
-
-# test_dbt_models:
-#   stage: test
-#   script:
-#     - dbt debug # Debug DBT models
-#     - dbt run # Run DBT models
-#     - dbt test # Run DBT tests
-#   only:
-#     - main # or any other branch you want to run tests on
-
-# deploy_to_ec2:
-#   stage: deploy
-#   script:
-#     - echo "Deploying to EC2"
-#     # deployment script
-#   only:
-#     - main
