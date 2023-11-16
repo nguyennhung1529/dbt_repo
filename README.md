@@ -1,4 +1,4 @@
-Welcome to your new dbt project!
+Welcome to your new dbt project demo!
 
 ### Using the starter project
 
