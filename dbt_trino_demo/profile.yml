@@ -1,0 +1,12 @@
+dbt_trino_demo:
+  target: dev
+  outputs:
+    dev:
+      type: trino
+      threads: 1
+      catalog: hive
+      schema: your_schema
+      host: your_trino_host
+      port: 8080
+      user: your_user
+      http_scheme: http

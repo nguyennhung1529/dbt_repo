@@ -1,0 +1,30 @@
+[0m11:03:49.136901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A45A90C880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A45D718D00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A45D718A90>]}
+
+
+============================== 11:03:49.139901 | 1af86cb2-0ad4-48da-ac7c-e925b424185f ==============================
+[0m11:03:49.139901 [info ] [MainThread]: Running with dbt=1.7.1
+[0m11:03:49.140901 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Nhung\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init dbt_trino_demo', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:03:49.141901 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/Nhung/.dbt')}
+[0m11:03:49.141901 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m11:03:49.143903 [debug] [MainThread]: Starter project path: e:\documents\0.job\fss\dev\aws\1.fss etl framework practice\project-cicd\dbt-project\env_dbt_demo\lib\site-packages\dbt\include\starter_project
+[0m11:03:49.213904 [info ] [MainThread]: 
+Your new dbt project "dbt_trino_demo" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:03:49.215902 [info ] [MainThread]: Setting up your profile.
+[0m11:04:01.714414 [info ] [MainThread]: Profile dbt_trino_demo written to C:\Users\Nhung\.dbt\profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m11:04:01.715409 [debug] [MainThread]: Command `dbt init` succeeded at 11:04:01.715409 after 12.59 seconds
+[0m11:04:01.716443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A45A90C880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A456895520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A45D842EB0>]}
+[0m11:04:01.716443 [debug] [MainThread]: Flushing usage events
