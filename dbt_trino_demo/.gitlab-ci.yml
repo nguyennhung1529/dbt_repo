@@ -1,8 +1,8 @@
-image: fishtownanalytics/dbt:latest
+# image: fishtownanalytics/dbt:latest
 
 before_script:
-  - dbt deps # Install dependencies
-  - dbt seed # Load any seed files
+  - env_dbt_demo\Scripts\activate
+  # - dbt deps # Install dependencies
   # - pip install dbt-core
   # - pip install dbt-trino
 
