@@ -1,11 +1,8 @@
-# image: xemuliam/dbt:latest
-
 stages:
   - test
   - deploy
 
 before_script:
-  - pip install --upgrade pip
   - apt-get update && apt-get install -y python3-venv python3-pip # for Linux runners
   - python3 -m venv env_dbt_demo
   - source env_dbt_demo/bin/activate
@@ -14,7 +11,7 @@ before_script:
   - pip install dbt-core==1.6.6
   - pip install dbt-trino==1.6.2
   # - pip install -r requirements.txt # assuming you have a requirements.txt with DBT and other dependencies
-  - cd ./dbt_trino_demo
+  - cd ./dbt_trino_demo_ntn
   - dbt deps
 
 test_dbt_models:
@@ -44,4 +41,3 @@ deploy_to_dbt_ec2:
     # - ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IPADDRESS 'cd ./ && git pull && dbt run'
   only:
     - main
-    

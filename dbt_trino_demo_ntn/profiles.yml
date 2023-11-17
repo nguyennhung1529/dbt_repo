@@ -1,4 +1,4 @@
-dbt_trino_demo:
+dbt_trino_demo_ntn:
   outputs:
     dev:
       type: trino
