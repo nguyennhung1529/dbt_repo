@@ -7,7 +7,7 @@ dbt_trino_demo:
       password:  # required if method is ldap or kerberos
       catalog: $DB_TRINO_CATALOG
       host: $DB_TRINO_HOST
-      port: $DB_TRINO_PORT
+      port: 8080
       schema: $DB_TRINO_SCHEMA
       threads: 1
   target: dev
