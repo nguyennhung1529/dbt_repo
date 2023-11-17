@@ -3,11 +3,11 @@ dbt_trino_demo:
     dev:
       type: trino
       method: none   # optional, one of {none | ldap | kerberos}
-      user: $DB_TRINO_USER
+      user: "{{ env_var('DB_TRINO_USER') }}"
       password:  # required if method is ldap or kerberos
-      catalog: $DB_TRINO_CATALOG
-      host: $DB_TRINO_HOST
-      port: 8080
-      schema: $DB_TRINO_SCHEMA
+      catalog: "{{ env_var('DB_TRINO_CATALOG') }}"
+      host: "{{ env_var('DB_TRINO_HOST') }}"
+      port: "{{ env_var('DB_TRINO_HOST') | int }}"
+      schema: "{{ env_var('DB_TRINO_SCHEMA') }}"
       threads: 1
   target: dev
