@@ -40,7 +40,7 @@ deploy_to_dbt_ec2:
     - chmod 600 ~/.ssh/known_hosts
     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" >> ~/.ssh/config'
   script:
-    - ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IPADDRESS 'cd ./ && git pull'
+    - ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IPADDRESS 'aws --version'
     # - ssh -o StrictHostKeyChecking=no ubuntu@$EC2_IPADDRESS 'cd ./ && git pull && dbt run'
   only:
     - main
