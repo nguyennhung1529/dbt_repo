@@ -42,3 +42,125 @@ Runtime Error
 [0m14:22:10.679358 [debug] [MainThread]: Command `dbt deps` failed at 14:22:10.679358 after 0.06 seconds
 [0m14:22:10.680349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E82B77DF70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E82E5BFF10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E82E5BF7C0>]}
 [0m14:22:10.680349 [debug] [MainThread]: Flushing usage events
+[0m12:14:17.129688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B504674D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B50715A520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B50715A2E0>]}
+
+
+============================== 12:14:17.134630 | 6c4ea053-cf19-4070-b332-cf5e7de2b7ae ==============================
+[0m12:14:17.134630 [info ] [MainThread]: Running with dbt=1.6.6
+[0m12:14:17.135051 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Nhung\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m12:14:17.136092 [info ] [MainThread]: dbt version: 1.6.6
+[0m12:14:17.136092 [info ] [MainThread]: python version: 3.9.5
+[0m12:14:17.137057 [info ] [MainThread]: python path: e:\documents\0.job\fss\dev\aws\1.fss etl framework practice\project-cicd\dbt_repo\env_dbt_demo\scripts\python.exe
+[0m12:14:17.137057 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:14:17.260642 [info ] [MainThread]: Using profiles dir at C:\Users\Nhung\.dbt
+[0m12:14:17.260642 [info ] [MainThread]: Using profiles.yml file at C:\Users\Nhung\.dbt\profiles.yml
+[0m12:14:17.261655 [info ] [MainThread]: Using dbt_project.yml file at E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml
+[0m12:14:17.262622 [info ] [MainThread]: Configuration:
+[0m12:14:17.262622 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:14:17.263654 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:14:17.263654 [info ] [MainThread]: Required dependencies:
+[0m12:14:17.264656 [debug] [MainThread]: Executing "git --help"
+[0m12:14:17.314678 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:14:17.315675 [debug] [MainThread]: STDERR: "b''"
+[0m12:14:17.315675 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:14:17.316682 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:14:17.317674 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:14:17.317674 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_trino_demo", target "dev" invalid: ['database name'] is not of type 'string'
+
+
+[0m12:14:17.319674 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml> not found
+
+[0m12:14:17.320678 [debug] [MainThread]: Command `dbt debug` failed at 12:14:17.320678 after 0.21 seconds
+[0m12:14:17.321674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B504674D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B50715A3A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B50725CA60>]}
+[0m12:14:17.321674 [debug] [MainThread]: Flushing usage events
+[0m12:14:55.653018 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A3EC04A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A416EB490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A416EB250>]}
+
+
+============================== 12:14:55.656016 | c1124d06-bed8-44bd-a247-7b1a53b83e8e ==============================
+[0m12:14:55.656016 [info ] [MainThread]: Running with dbt=1.6.6
+[0m12:14:55.657015 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Nhung\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m12:14:55.658019 [info ] [MainThread]: dbt version: 1.6.6
+[0m12:14:55.658019 [info ] [MainThread]: python version: 3.9.5
+[0m12:14:55.659017 [info ] [MainThread]: python path: e:\documents\0.job\fss\dev\aws\1.fss etl framework practice\project-cicd\dbt_repo\env_dbt_demo\scripts\python.exe
+[0m12:14:55.659017 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:14:55.771051 [info ] [MainThread]: Using profiles dir at C:\Users\Nhung\.dbt
+[0m12:14:55.772049 [info ] [MainThread]: Using profiles.yml file at C:\Users\Nhung\.dbt\profiles.yml
+[0m12:14:55.773073 [info ] [MainThread]: Using dbt_project.yml file at E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml
+[0m12:14:55.773073 [info ] [MainThread]: Configuration:
+[0m12:14:55.774048 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:14:55.775053 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:14:55.775053 [info ] [MainThread]: Required dependencies:
+[0m12:14:55.776048 [debug] [MainThread]: Executing "git --help"
+[0m12:14:55.818016 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:14:55.819016 [debug] [MainThread]: STDERR: "b''"
+[0m12:14:55.820021 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:14:55.822019 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:14:55.822019 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:14:55.823025 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_trino_demo", target "dev" invalid: ['database name'] is not of type 'string'
+
+
+[0m12:14:55.824026 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml> not found
+
+[0m12:14:55.825016 [debug] [MainThread]: Command `dbt debug` failed at 12:14:55.825016 after 0.19 seconds
+[0m12:14:55.826015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A3EC04A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A416EB310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021A417EEDF0>]}
+[0m12:14:55.826015 [debug] [MainThread]: Flushing usage events
+[0m12:15:32.719044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E86FC4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E89AAB580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E89AAB340>]}
+
+
+============================== 12:15:32.722044 | 03adc624-24ec-4835-bf25-7aad258d69de ==============================
+[0m12:15:32.722044 [info ] [MainThread]: Running with dbt=1.6.6
+[0m12:15:32.723044 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Nhung\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m12:15:32.724042 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m12:15:32.725044 [debug] [MainThread]: Command `dbt deps` failed at 12:15:32.725044 after 0.02 seconds
+[0m12:15:32.726043 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E86FC4D30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E82FB5E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028E89AAB8E0>]}
+[0m12:15:32.727041 [debug] [MainThread]: Flushing usage events
+[0m12:57:17.980132 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902FD23C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903280B4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903280B2B0>]}
+
+
+============================== 12:57:17.988131 | 7286b447-3f8b-4387-8da6-116795abc721 ==============================
+[0m12:57:17.988131 [info ] [MainThread]: Running with dbt=1.6.6
+[0m12:57:17.989133 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Nhung\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m12:57:17.989133 [info ] [MainThread]: dbt version: 1.6.6
+[0m12:57:17.990132 [info ] [MainThread]: python version: 3.9.5
+[0m12:57:17.990132 [info ] [MainThread]: python path: e:\documents\0.job\fss\dev\aws\1.fss etl framework practice\project-cicd\dbt_repo\env_dbt_demo\scripts\python.exe
+[0m12:57:17.991133 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m12:57:18.107132 [info ] [MainThread]: Using profiles dir at C:\Users\Nhung\.dbt
+[0m12:57:18.108131 [info ] [MainThread]: Using profiles.yml file at C:\Users\Nhung\.dbt\profiles.yml
+[0m12:57:18.109133 [info ] [MainThread]: Using dbt_project.yml file at E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml
+[0m12:57:18.109133 [info ] [MainThread]: Configuration:
+[0m12:57:18.110133 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m12:57:18.110133 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m12:57:18.110133 [info ] [MainThread]: Required dependencies:
+[0m12:57:18.111132 [debug] [MainThread]: Executing "git --help"
+[0m12:57:18.151139 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:57:18.151139 [debug] [MainThread]: STDERR: "b''"
+[0m12:57:18.152133 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:57:18.153133 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m12:57:18.153133 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m12:57:18.154133 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "dbt_trino_demo", target "dev" invalid: ['database name'] is not of type 'string'
+
+
+[0m12:57:18.154133 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <E:\Documents\0.Job\FSS\DEV\AWS\1.Fss ETL Framework Practice\project-cicd\dbt_repo\dbt_project.yml> not found
+
+[0m12:57:18.156134 [debug] [MainThread]: Command `dbt debug` failed at 12:57:18.155132 after 0.19 seconds
+[0m12:57:18.156134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001902FD23C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903280B370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001903291A7F0>]}
+[0m12:57:18.157137 [debug] [MainThread]: Flushing usage events

@@ -1,0 +1,13 @@
+dbt_trino_demo_ntn:
+  outputs:
+    dev:
+      type: trino
+      method: none   # optional, one of {none | ldap | kerberos}
+      user: 'admin'
+      password:  # required if method is ldap or kerberos
+      catalog: 'redshift'
+      host: '18.142.158.232'
+      port: 8080
+      schema: 'tiencm'
+      threads: 1
+  target: dev
